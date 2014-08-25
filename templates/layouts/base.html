@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Parker Ramsay</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css"/>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href="/">This is the Site of Parker Ramsay</a></h1>
+    </header>
+    <menu>
+      <ul>
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <li>
+          <a href="/events">Events</a>
+        </li>
+        <li>
+          <a href="/media">Media</a>
+        </li>
+        <li>
+          <a href="/for_hire">For Hire</a>
+        </li>
+        <li>
+          <a href="/contact">Contact</a>
+        </li>
+      </ul>
+    </menu>
+    <container class="page-content">
+      {% block home %}
+      {% endblock %}
+      {% block about %}
+      {% endblock %}
+      {% block events %}
+      {% endblock %}
+      {% block media %}
+      {% endblock %}
+      {% block for_hire %}
+      {% endblock %}
+      {% block contact %}
+      {% endblock %}
+    </container>
+    <footer>
+      <h3>Last but not least, the Footer</h3>
+    </footer>
+  </body>
+</html>
+

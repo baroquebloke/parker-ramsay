@@ -49,4 +49,43 @@ table {
 
 /* ################################################# */
 
-
+html {
+  margin: 0 auto;
+}
+header {
+  margin: 0 auto;
+  text-align: center;
+  background-color: gray;
+  color: white;
+}
+header h1 {
+  font-size: 200%;
+  padding: 20px;
+}
+menu {
+  margin: 0 auto;
+  text-align: center;
+}
+menu li {
+  display: inline;
+}
+menu a {
+  display: inline-block;
+  text-decoration: none;
+  text-decoration: none;
+  padding: 10px 10px 20px 10px;
+}
+.page-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  clear: both;
+}
+#portrait {
+  width: 200px;
+  height: auto;
+}
+footer {
+  text-align: center;
+  clear: both;
+}

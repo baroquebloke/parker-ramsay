@@ -2,33 +2,36 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Parker Ramsay</title>
+    <title>
+      Parker Ramsay
+    </title>
     <link rel="stylesheet" type="text/css" href="/static/style.css"/>
   </head>
   <body>
     <header>
       <h1>
-        <a href="/">Parker Ramsay</a></h1>
+        <a href="/">Parker Ramsay</a>
+      </h1>
+      <menu class="nav">
+        <ul>
+          <li>
+            <a href="/about">About</a>
+          </li>
+          <li>
+            <a href="/events">Events</a>
+          </li>
+          <li>
+            <a href="/media">Media</a>
+          </li>
+          <li>
+            <a href="/for_hire">For Hire</a>
+          </li>
+          <li>
+            <a href="/contact">Contact</a>
+          </li>
+        </ul>
+      </menu>
     </header>
-    <menu>
-      <ul>
-        <li>
-          <a href="/about">About</a>
-        </li>
-        <li>
-          <a href="/events">Events</a>
-        </li>
-        <li>
-          <a href="/media">Media</a>
-        </li>
-        <li>
-          <a href="/for_hire">For Hire</a>
-        </li>
-        <li>
-          <a href="/contact">Contact</a>
-        </li>
-      </ul>
-    </menu>
     <div class="page-content">
       {% block home %}
       {% endblock %}
@@ -42,6 +45,9 @@
       {% endblock %}
       {% block contact %}
       {% endblock %}
+    </div>
+    <div class="side-bar">
+      <img src="/static/1.jpg" alt="pic">
     </div>
     <footer>
       <h3>Last but not least, the Footer</h3>

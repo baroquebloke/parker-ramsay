@@ -51,78 +51,41 @@ table {
 
 html {
   max-width: 1000px;
-  background-color: yellow;
   margin: 0 auto;
+}
+body {
 }
 header {
-  margin: 0 auto;
-  text-align: center;
-  max-width: 100%;
-  padding: 10px;
-  border-bottom: 1px solid black;
-  background-color: white;
-  color: white;
-}
-header h1 {
-  font-size: 200%;
-  padding: 20px;
-}
-header a {
-  text-decoration: none;
-}
-menu {
-  max-width: 100%;
-  margin: 0 auto;
-  background-color: white;
-  padding: 10px;
-  border-bottom: 1px solid black;
-  text-align: center;
-}
-menu li {
-  display: inline;
-}
-menu a {
-  display: inline-block;
-  text-decoration: none;
-  text-decoration: none;
-  padding: 10px;
-}
-.page-content {
-  max-width: 100%;
-  margin: 0 auto;
-  background-color: white;
+  width: 100%;
   text-align: justify;
-  padding: 10px;
-  overflow: hidden;
-  clear: both;
-}
-.page-content p {
-  margin: 5px;
-}
-#portrait {
-  max-width: 100%;
-  padding: 0 0 10px 10px;
-  height: auto;
-  float: right;
-}
-#portrait-2 {
-  max-width: 75%;
-  padding: 0 10px 10px 0;
-  height: auto;
+  border: 1px solid #333;
   float: left;
 }
-@media screen and (max-width: 1100px) {
-  #portrait   { max-width: 75%; }
-  #portrait-2 { max-width: 55%; }
+.nav {
+  border: 1px solid #333;
+  float: right;
 }
-@media screen and (max-width: 650px) {
-  #portrait   { max-width: 50%; }
-  #portrait-2 { max-width: 35%; }
+.nav ul {
+}
+.nav ul li {
+  display: inline-block;
+}
+.side-bar { 
+  width: 30%;
+  float: left;
+}
+.side-bar img {
+  width: 100%;
+  height: auto;
+}
+.page-content {
+  max-width: 70%;
+  text-align: justify;
+  float: left;
 }
 footer {
-  text-align: center;
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 10px;
-  background-color: white;
+  border: 1px solid #333;
+  float: left;
+  clear: both;
 }
+

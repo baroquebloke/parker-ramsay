@@ -64,7 +64,7 @@ body {
   width: 96%;
   padding: 2%;
   margin-bottom: 5px;
-  border-bottom: 1px solid #999999;
+  border-bottom: 1px solid #777777;
   display: inline-block;
 }
 header {
@@ -88,7 +88,7 @@ header a {
   color: #222222;
 }
 #nav li:before {
-  color: #999999;
+  color: #777777;
   content: "|";
 }
 #nav li:first-child:before {
@@ -103,6 +103,9 @@ header a {
   float: right;
 }
 .side-bar img {
+  webkit-border-radius: 10px;
+     moz-border-radius: 10px;
+         border-radius: 10px;
   margin: 0 auto;
   max-width: 100%;
   height: auto;

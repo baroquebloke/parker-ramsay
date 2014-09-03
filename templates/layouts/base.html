@@ -8,11 +8,13 @@
     <link rel="stylesheet" type="text/css" href="/static/style.css"/>
   </head>
   <body>
-    <header>
-      <h1>
-        <a href="/">Parker Ramsay</a>
-      </h1>
-      <menu class="nav">
+    <div class="wrap">
+      <header>
+        <h1>
+          <a href="/">Parker Ramsay</a>
+        </h1>
+      </header>
+      <menu id="nav">
         <ul>
           <li>
             <a href="/about">About</a>
@@ -31,27 +33,37 @@
           </li>
         </ul>
       </menu>
-    </header>
-    <div class="page-content">
-      {% block home %}
-      {% endblock %}
-      {% block about %}
-      {% endblock %}
-      {% block events %}
-      {% endblock %}
-      {% block media %}
-      {% endblock %}
-      {% block for_hire %}
-      {% endblock %}
-      {% block contact %}
-      {% endblock %}
     </div>
-    <div class="side-bar">
-      <img src="/static/1.jpg" alt="pic">
+    <div class="wrap">
+     <div class="side-bar">
+        <img src="/static/1.jpg" alt="pic">
+        <div class="vcard">
+          <h1>Phone:  <a href="tel:18675309">867-5309</a></h1>
+          <h1>Email: 
+            <a href="mailto:something@somewhere.com">something@somewhere.com</a>
+          </h1>
+          <h1>Resume: <a href="/static/resume.pdf">Download PDF</a></h1>
+        </div>
+      </div>
+      <div class="page-content">
+        {% block home %}
+        {% endblock %}
+        {% block about %}
+        {% endblock %}
+        {% block events %}
+        {% endblock %}
+        {% block media %}
+        {% endblock %}
+        {% block for_hire %}
+        {% endblock %}
+        {% block contact %}
+        {% endblock %}
+      </div>
     </div>
     <footer>
       <h3>Last but not least, the Footer</h3>
     </footer>
+  </div>
   </body>
 </html>
 

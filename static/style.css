@@ -50,42 +50,101 @@ table {
 /* ################################################# */
 
 html {
-  max-width: 1000px;
+  max-width: 100%;
   margin: 0 auto;
+  font-family: Futura;
+  overflow-y: scroll;
 }
 body {
+  max-width: 1000px;
+  padding: 10px;
+  margin: 0 auto;
+}
+.wrap {
+  width: 96%;
+  padding: 2%;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #999999;
+  display: inline-block;
 }
 header {
-  width: 100%;
-  text-align: justify;
-  border: 1px solid #333;
+  font-size: 240%;
   float: left;
 }
-.nav {
-  border: 1px solid #333;
+header a {
+  text-decoration: none;
+  color: #222222;
+}
+#nav {
+  font-size: 95%;
+  padding-top: 15px;
   float: right;
 }
-.nav ul {
+#nav a {
+  text-decoration: none;
+  color: #777777;
 }
-.nav ul li {
+#nav a:hover {
+  color: #222222;
+}
+#nav li:before {
+  color: #999999;
+  content: "|";
+}
+#nav li:first-child:before {
+  content: none;
+}
+#nav ul li {
   display: inline-block;
 }
 .side-bar { 
-  width: 30%;
-  float: left;
+  width: 35%;
+  font-size: 75%;
+  float: right;
 }
 .side-bar img {
-  width: 100%;
+  margin: 0 auto;
+  max-width: 100%;
   height: auto;
 }
+.side-bar a {
+  text-decoration: none;
+  color: #777777;
+}
+.side-bar a:hover {
+  color: #222222;
+}
+.vcard {
+  text-align: center;
+}
+.vcard h1 {
+  font-size: 1.5vmax;
+}
 .page-content {
-  max-width: 70%;
+  width: 62%;
+  padding: 0 3% 1% 0;
+  line-height: 25px;
+  font-size: 110%;
   text-align: justify;
+  color: #222222;
   float: left;
 }
+@media screen and (max-width: 480px) {
+  .side-bar { width: 100%;
+              margin: 0 auto;
+              padding-bottom: 10px;
+              text-align: center;
+              border-bottom: 1px solid #333; }
+  .side-bar img { /*width: 30%;
+                  float: right; */}
+  .vcard h1 { padding-top: 8px;
+              font-size: 2vmax; }
+  .page-content { width: 100%;
+                  padding-top: 10px;}
+}
+
 footer {
-  border: 1px solid #333;
-  float: left;
+  text-align: center;
   clear: both;
 }
 

@@ -130,7 +130,6 @@ header a {
   padding: 0 3% 1% 0;
   line-height: 25px;
   font-size: 110%;
-  text-align: justify;
   color: #222222;
   float: left;
 }
@@ -138,6 +137,7 @@ header a {
   font-size: 110%;
 }
 .page-content p {
+  text-align: justify;
   text-indent: 1.5em;
   padding-bottom: 15px;
 }
@@ -154,7 +154,6 @@ header a {
               padding-bottom: 10px;
               text-align: center;
               border-bottom: 1px solid #333; }
-  .side-bar img { }
   .vcard h1 { font-size: 2vmax; }
   .page-content { width: 100%;
                   padding-top: 10px;}

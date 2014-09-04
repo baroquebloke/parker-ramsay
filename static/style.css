@@ -103,9 +103,9 @@ header a {
   float: right;
 }
 .side-bar img {
-  webkit-border-radius: 10px;
-     moz-border-radius: 10px;
-         border-radius: 10px;
+  webkit-border-radius: 5px;
+     moz-border-radius: 5px;
+         border-radius: 5px;
   margin: 0 auto;
   max-width: 100%;
   height: auto;
@@ -118,6 +118,8 @@ header a {
   color: #222222;
 }
 .vcard {
+  padding-top: 8px;
+  line-height: 30px;
   text-align: center;
 }
 .vcard h1 {
@@ -132,22 +134,35 @@ header a {
   color: #222222;
   float: left;
 }
+.page-content h1 {
+  font-size: 110%;
+}
+.page-content p {
+  text-indent: 1.5em;
+  padding-bottom: 15px;
+}
+.page-content ul {
+  padding-bottom: 35px;
+}
+.page-content li {
+  padding-left: 20px;
+  color: #777777;
+}
 @media screen and (max-width: 480px) {
   .side-bar { width: 100%;
               margin: 0 auto;
               padding-bottom: 10px;
               text-align: center;
               border-bottom: 1px solid #333; }
-  .side-bar img { /*width: 30%;
-                  float: right; */}
-  .vcard h1 { padding-top: 8px;
-              font-size: 2vmax; }
+  .side-bar img { }
+  .vcard h1 { font-size: 2vmax; }
   .page-content { width: 100%;
                   padding-top: 10px;}
 }
 
 footer {
   text-align: center;
+  color: #777777;
   clear: both;
 }
 

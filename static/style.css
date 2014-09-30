@@ -133,6 +133,13 @@ header a {
   color: #222222;
   float: left;
 }
+.page-content a {
+  text-decoration: none;
+  color: #777777;
+}
+.page-content a:hover {
+  color: #222222;
+}
 .page-content h1 {
   font-size: 110%;
 }
@@ -148,7 +155,46 @@ header a {
   padding-left: 20px;
   color: #777777;
 }
-@media screen and (max-width: 480px) {
+figure {
+  float: left;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid #777777;
+  padding-top: 5px;
+  webkit-transition: all 0.6s ease;
+     moz-transition: all 0.6s ease;
+      -o-transition: all 0.6s ease;
+}
+figure img {
+  width: 100%;
+  height: auto;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+}
+figure:hover figcaption {
+  opacity: 1;
+  left: 0;
+}
+figcaption {
+  position: absolute;
+  max-height: 40%;
+  max-width: 75%;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px 20px;
+  opacity: 0;
+  bottom: 3%;
+  left: -30%;
+  webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+      -o-transition: all 0.6s ease-in-out;
+}
+@media screen and (max-width: 632px) {
   .side-bar { width: 100%;
               margin: 0 auto;
               padding-bottom: 10px;

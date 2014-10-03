@@ -1,4 +1,4 @@
-{% extends "/layouts/base.html" %}
+{% extends "/layouts/base_no_side.html" %}
 
 {% block media %}
 <h1>In the News</h1>
@@ -10,25 +10,27 @@
   </li>
 </ul>
 <h1>Photos</h1>
-<figure>
-  <img src="/static/2.jpg" alt="pic"/>
-  <figcaption>Parker 2 Parker 2 Parker 2 Parker2iwuh
-    fqwfwrxfkuerfkuwebfuwf
-    gouwyefgoeuwyrfgowueygf
-    wuefduygfxuygfuwygfuwygef
-    ryufgnuwryfgurwyfgcoeuyrfgeoruy</figcaption>
-</figure>
-<figure>
-  <img src="/static/3.jpg" alt="pic"/>
-  <figcaption>Parker 3</figcaption>
-</figure>
-<figure>
-  <img src="/static/4.jpg" alt="pic"/>
-  <figcaption>Parker 4</figcaption>
-</figure>
-<figure>
-  <img src="/static/5.jpg" alt="pic"/>
-  <figcaption>Parker 5</figcaption>
-</figure>
+<div id="container">
+  <figure>
+    <img src="/static/2.jpg" alt="pic"/>
+    <figcaption>Parker 2 Parker 2 Parker 2 Parker2iwuh
+      fqwfwrxfkuerfkuwebfuwf
+      gouwyefgoeuwyrfgowueygf
+      wuefduygfxuygfuwygfuwygef
+      ryufgnuwryfgurwyfgcoeuyrfgeoruy</figcaption>
+  </figure>
+  <figure>
+    <img src="/static/3.jpg" alt="pic"/>
+    <figcaption>Parker 3</figcaption>
+  </figure>
+  <figure>
+    <img src="/static/4.jpg" alt="pic"/>
+    <figcaption>Parker 4</figcaption>
+  </figure>
+  <figure>
+    <img src="/static/5.jpg" alt="pic"/>
+    <figcaption>Parker 5</figcaption>
+  </figure>
+</div>
 {% endblock %}
 

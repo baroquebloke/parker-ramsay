@@ -97,37 +97,9 @@ header a {
 #nav ul li {
   display: inline-block;
 }
-.side-bar { 
-  width: 35%;
-  font-size: 75%;
-  float: right;
-}
-.side-bar img {
-  webkit-border-radius: 5px;
-     moz-border-radius: 5px;
-         border-radius: 5px;
-  margin: 0 auto;
-  max-width: 100%;
-  height: auto;
-}
-.side-bar a {
-  text-decoration: none;
-  color: #777777;
-}
-.side-bar a:hover {
-  color: #222222;
-}
-.vcard {
-  padding-top: 8px;
-  line-height: 30px;
-  text-align: center;
-}
-.vcard h1 {
-  font-size: 1.5vmax;
-}
 .page-content {
-  width: 62%;
-  padding: 0 3% 1% 0;
+  width: 100%;
+  padding: 0;
   line-height: 25px;
   font-size: 110%;
   color: #222222;
@@ -155,16 +127,63 @@ header a {
   padding-left: 20px;
   color: #777777;
 }
+#container {
+  max-width: 960px;
+  text-align: center;
+  margin: 0 auto;
+  clear: both;
+}
+@media screen and (max-width: 1100px) {
+  #container { max-width: 720px; }
+}
+@media screen and (max-width: 800px) {
+  #container { max-width: 480px; }
+}
+@media screen and (max-width: 600px) {
+  #container { max-width: 240px }
+}
+figure {
+  float: left;
+  margin: 5px 5px 0 5px;
+  width: 230px;
+  height: auto;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  webkit-transition: all 0.6s ease;
+     moz-transition: all 0.6s ease;
+      -o-transition: all 0.6s ease;
+}
+figure img {
+  width: 100%;
+  height: auto;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+}
+figure:hover figcaption {
+  opacity: 1;
+  left: 0;
+}
+figcaption {
+  position: absolute;
+  max-height: 40%;
+  max-width: 75%;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px 20px;
+  opacity: 0;
+  bottom: 4%;
+  left: -30%;
+  webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+      -o-transition: all 0.6s ease-in-out;
+}
 @media screen and (max-width: 644px) {
-  .side-bar { width: 100%;
-              margin: 0 auto;
-              padding-bottom: 10px;
-              text-align: center;
-              border-bottom: 1px solid #333; }
-  .vcard h1 { font-size: 2vmax; }
   .page-content { width: 100%;
                   padding-top: 10px;}
 }
+
 footer {
   text-align: center;
   color: #777777;

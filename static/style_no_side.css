@@ -150,9 +150,9 @@ figure {
   text-align: center;
   position: relative;
   overflow: hidden;
-  webkit-transition: all 0.6s ease;
-     moz-transition: all 0.6s ease;
-      -o-transition: all 0.6s ease;
+  -webkit-transition: all 0.6s ease;
+     -moz-transition: all 0.6s ease;
+       -o-transition: all 0.6s ease;
 }
 figure img {
   width: 100%;
@@ -175,15 +175,20 @@ figcaption {
   opacity: 0;
   bottom: 4%;
   left: -30%;
-  webkit-transition: all 0.6s ease-in-out;
-    -moz-transition: all 0.6s ease-in-out;
-      -o-transition: all 0.6s ease-in-out;
+  -webkit-transition: all 0.6s ease-in-out;
+     -moz-transition: all 0.6s ease-in-out;
+       -o-transition: all 0.6s ease-in-out;
+}
+figcaption #img_link {
+  color: white;
+}
+figcaption #img_link:hover {
+  color: #999999;
 }
 @media screen and (max-width: 644px) {
   .page-content { width: 100%;
                   padding-top: 10px;}
 }
-
 footer {
   text-align: center;
   color: #777777;

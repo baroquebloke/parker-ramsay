@@ -144,12 +144,15 @@ header a {
 }
 figure {
   float: left;
-  margin: 5px 5px 0 5px;
+  margin: 5px;
   width: 230px;
-  height: auto;
+  height: 230px;
   text-align: center;
   position: relative;
   overflow: hidden;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
   -webkit-transition: all 0.6s ease;
      -moz-transition: all 0.6s ease;
        -o-transition: all 0.6s ease;
@@ -157,9 +160,6 @@ figure {
 figure img {
   width: 100%;
   height: auto;
-  -webkit-border-radius: 5px;
-     -moz-border-radius: 5px;
-          border-radius: 5px;
 }
 figure:hover figcaption {
   opacity: 1;

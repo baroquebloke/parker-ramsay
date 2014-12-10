@@ -76,7 +76,7 @@ header a {
   color: #222222;
 }
 #nav {
-  font-size: 85%;
+  font-size: 92%;
   padding-top: 15px;
   float: right;
 }
@@ -164,6 +164,9 @@ header a {
   .vcard h1 { font-size: 2vmax; }
   .page-content { width: 100%;
                   padding-top: 10px;}
+}
+@media screen and (max-width: 360px) {
+  #nav { font-size: 75%; }
 }
 footer {
   text-align: center;

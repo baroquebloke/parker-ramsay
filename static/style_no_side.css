@@ -195,6 +195,9 @@ figcaption #img_link:hover {
   .page-content { width: 100%;
                   padding-top: 10px;}
 }
+@media screen and (max-width: 360px) {
+  #nav { font-size: 75%; }
+}
 footer {
   text-align: center;
   color: #777777;
